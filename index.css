@@ -18,9 +18,9 @@ body{
         background-size: cover; 
         width: 90vw;
         height: 60vh;
-        margin-right: 2.5vw;
-        margin-left: 2.5vw;
-        margin-bottom: 10vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
     }
     .texto_s{
         width: 100vw;
@@ -32,5 +32,93 @@ body{
         text-align: center;
         margin-top: 0;
     }
-
+    .texto_secundario_second{
+        text-align: center;
+    }
+    .texto_secundario_second:first-child{
+        margin-top: 2.5vh;
+    }
+    .header_third{
+        margin-top: 5vh;
+        margin-bottom: 1.5vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header_third label{
+        text-align: center;
+    }
+    .img_third{
+        display: flex;
+        flex-direction: column;
+    }
+    .img_catalogue{
+        background-size: cover; 
+        max-width:100%;
+        width:90vw;
+        height:30vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+    }
+    .img_1{
+        background-image: url("./images/mobile/image-deep-earth.jpg");
+    }
+    .img_2{
+        background-image: url("./images/mobile/image-night-arcade.jpg");
+    }
+    .img_3{
+        background-image: url("./images/mobile/image-soccer-team.jpg");
+    }
+    .img_4{
+        background-image: url("./images/mobile/image-grid.jpg");
+    }
+    .img_5{
+        background-image: url("./images/mobile/image-from-above.jpg ");
+    }
+    .img_6{
+        background-image: url("./images/mobile/image-pocket-borealis.jpg ");
+    }
+    .img_7{
+        background-image: url("./images/mobile/image-curiosity.jpg ");
+    }
+    .img_8{
+        background-image: url("./images/mobile/image-fisheye.jpg ");
+    }
+    .text_img{
+        color: #fff;
+    }
+    .footer_exercise{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer_exercise label{
+        text-align: center;
+    }
+    .footer_exercise label:first-child{
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+    .footer_exercise label:last-child{
+        margin-bottom: 10vh;
+    }
+    .ft_ex_container_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    .ft_ex_container_1 a{
+        text-align: center;
+    }
+    .ft_ex_container_2{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2.5vh;
+    }
+    .ft_ex_container_2 a{
+        text-align: center;
+    }
 }
