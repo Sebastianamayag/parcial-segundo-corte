@@ -1,3 +1,10 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark_Gray: hsl(0, 0%, 55%);
+    --Very_Dark_Gray: hsl(0, 0%, 41%);
+}
+
 body{
     font-size: 15px;
     flex: 1;
@@ -27,26 +34,32 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        font-family: Josefin Sans;
+        font-weight: 300;
     }
     .texto_secundario{
         text-align: center;
         margin-top: 0;
+        color: var(--Black);
+        font-size: 25px;
     }
     .texto_secundario_second{
         text-align: center;
+        color: var(--Very_Dark_Gray);
     }
     .texto_secundario_second:first-child{
         margin-top: 2.5vh;
     }
     .header_third{
         margin-top: 5vh;
-        margin-bottom: 1.5vh;
+        margin-bottom: 5vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
     .header_third label{
         text-align: center;
+        font-size: 25px;
     }
     .img_third{
         display: flex;
@@ -60,6 +73,9 @@ body{
         margin-right: 5vw;
         margin-left: 5vw;
         margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .img_1{
         background-image: url("./images/mobile/image-deep-earth.jpg");
@@ -86,20 +102,39 @@ body{
         background-image: url("./images/mobile/image-fisheye.jpg ");
     }
     .text_img{
-        color: #fff;
+        color: var(--White);
+        font-family:Josefin Sans ;
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 10vw;
+    }
+
+    .buttom_third{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    .buttom_third input{
+        width: 33vw;
+        border-radius: 0;
+        border: 1px solid var(--Black);
+        padding: 2.5vh;
     }
     .footer_exercise{
-        background-color: red;
+        background-color:var(--Black);
         display: flex;
         justify-content: center;
         flex-direction: column;
+        font-weight: 400;
+        font-family:Alata ;
     }
     .footer_exercise label{
         text-align: center;
     }
     .footer_exercise label:first-child{
-        margin-top: 7vh;
-        margin-bottom: 7vh;
+        margin-top: 5vh;
+        margin-bottom: 2.5vh;
+        font-size: 20px;
     }
     .footer_exercise label:last-child{
         margin-bottom: 10vh;
@@ -112,13 +147,27 @@ body{
     }
     .ft_ex_container_1 a{
         text-align: center;
+        color: var(--White);
+        text-decoration: none;
+        margin-top: 2.5vh;
     }
     .ft_ex_container_2{
+        display: flex;
         flex-direction: row;
-        justify-content: center;
         margin-bottom: 2.5vh;
+        justify-content: center;
+        padding: 0;
     }
-    .ft_ex_container_2 a{
-        text-align: center;
+    .ft_ex_container_2  li {
+        list-style: none;
+        margin-right: 1vh;
+        margin-left: 1vh;
+        
+    }
+    .white{
+        color: var(--White);
+    }
+    .gray{
+        color: var(--Dark_Gray);
     }
 }
