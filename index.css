@@ -43,6 +43,9 @@ body{
         width: 20px;
         height: 20px;
     }
+    .menu_n{
+        display: none;
+    }
     .img_h{
         background-image: url("./images/icon-hamburger.svg");
     }
@@ -106,6 +109,9 @@ body{
     .header_third label{
         text-align: center;
         font-size: 25px;
+    }
+    .header_third input{
+        display: none;
     }
     .img_third{
         display: flex;
@@ -174,17 +180,13 @@ body{
         font-weight: 400;
         font-family:Alata ;
     }
-    .footer_exercise label{
+
+    .footer_1,.footer_2{
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
-    .footer_exercise label:first-child{
-        margin-top: 5vh;
-        margin-bottom: 2.5vh;
-        font-size: 20px;
-    }
-    .footer_exercise label:last-child{
-        margin-bottom: 10vh;
-    }
+
     .ft_ex_container_1{
         display: flex;
         flex-direction: column;
@@ -208,7 +210,6 @@ body{
         list-style: none;
         margin-right: 1vh;
         margin-left: 1vh;
-        
     }
     .white{
         color: var(--White);
@@ -217,3 +218,228 @@ body{
         color: var(--Dark_Gray);
     }
 }
+@media (min-width: 1200px){
+    header{
+        margin: 0;
+    }
+    .main{
+        background-image: url("./images/desktop/image-hero.jpg");
+        background-repeat: no-repeat; 
+        background-size: 100vw 80vh; 
+        width: 100vw;
+        height: 80vh;
+        margin-bottom: 20vh;
+        margin-top: 0;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header p{
+        color: var(--White);
+        font-size: 25px;
+        margin-right: 15vw;
+    }
+    .header ul{
+        margin-top: 6.3vh;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .header ul a {
+        text-decoration: none;
+        color: var(--White);
+        margin: 0 1.5vw;
+    }
+    .menu_h_d{
+        display: none;
+    }
+    .menu_n{
+        display: inline;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 15vh 55vw 0 23vh;
+        border: 1px solid white;
+        padding: 5vh 0;
+    }
+    .content p{
+        color: var(--White);
+        margin-left: 5vw;
+        padding: 0;
+        font-size: 45px;
+        font-family: Josefin Sans;
+        font-weight: 300;
+    }
+    .line{
+        display: flex;
+        flex-direction: row;
+    }
+    .line p:last-child{
+        margin-left:10px;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img_second{
+        background-image: url("./images/desktop/image-interactive.jpg");
+        background-repeat: no-repeat; 
+        background-size: 50vw 70vh; 
+        z-index: 0;
+        margin-left: 23vh;
+    }
+    .texto_s{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        font-family: Josefin Sans;
+        font-weight: 300;
+        z-index: 1;
+        position: absolute;
+        margin-left: 50vw;
+        margin-top: 23vh;
+        padding: 5vw;
+        background-color: white;
+        width: 25vw;
+    }
+    .texto_secundario{
+        text-align: start;
+        margin-top: 0;
+        color: var(--Black);
+        font-size: 30px;
+        display: inline;
+    }
+    .texto_secundario_second{
+        text-align: start;
+        color: var(--Very_Dark_Gray);
+        font-size: 20px;
+    }
+    .third{
+        margin-top: 5vh;
+        margin-left: 23vh;
+        margin-right: 23vh;
+    }
+    .header_third{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .header_third label{
+        text-align: center;
+        font-size: 25px;
+    }
+    .header_third input{
+        display: inline;
+        background-color: var(--White);
+        color: var(--Black);
+        padding: 1vh 3vh;
+        margin-right: 4vh;
+
+    }
+    .img_third{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img_catalogue{
+        width: 25%;
+        background-size: 20vw 50vh; 
+        max-width: 100%;
+        width: 60vw;
+        height:50vh;
+        margin: 0 2vw 2vw 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .img_1{
+        background-image: url("./images/desktop/image-deep-earth.jpg");
+    }
+    .img_2{
+        background-image: url("./images/desktop/image-night-arcade.jpg");
+    }
+    .img_3{
+        background-image: url("./images/desktop/image-soccer-team.jpg");
+    }
+    .img_4{
+        background-image: url("./images/desktop/image-grid.jpg");
+    }
+    .img_5{
+        background-image: url("./images/desktop/image-from-above.jpg ");
+    }
+    .img_6{
+        background-image: url("./images/desktop/image-pocket-borealis.jpg ");
+    }
+    .img_7{
+        background-image: url("./images/desktop/image-curiosity.jpg ");
+    }
+    .img_8{
+        background-image: url("./images/desktop/image-fisheye.jpg ");
+    }
+    .text_img{
+        color: var(--White);
+        font-family:Josefin Sans ;
+        font-weight: 300;
+        font-size: 30px;
+        margin-left: 5vh;
+    }
+
+    .buttom_third{
+        display: none;
+    }
+    .footer_exercise{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 23vh;
+    }
+    .footer_exercise label{
+        text-align: start;
+    }
+    .footer_exercise label:first-child{
+        margin-top: 5vh;
+        font-size: 20px;
+    }
+    .ft_ex_container_1{
+        display: flex;
+        flex-direction: row;
+    }
+    .ft_ex_container_1 a {
+        margin-right: 1vh;
+    }
+    .footer_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 25vh;
+    }
+    .ft_ex_container_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+        margin-top: -2vh;
+        margin-bottom: 2vh;
+    }
+    .white{
+        color: var(--White);
+    }
+    .gray{
+        color: var(--Dark_Gray);
+        margin-top: -5vh;
+    }
+}
+
