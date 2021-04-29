@@ -16,13 +16,14 @@
         <div class="main">
             <div class="header">
                 <p>loopstudios</p>
-                <ul>
-                    <li><a class="menu_h_d" href="#"><div class="menu_h img_h" id="menu"></div></a></li>
-                    <li><a class="menu_n" href="#">About</a></li>
-                    <li><a class="menu_n" href="#">Careers</a></li>
-                    <li><a class="menu_n" href="#">Events</a></li>
-                    <li><a class="menu_n" href="#">Products</a></li>
-                    <li><a class="menu_n" href="#">Support</a></li>
+                
+                <ul id="menu_display">
+                    <li><a class="menu_h_d" href="#" id="btnMenu" onclick="buttonclick();"><div class="menu_h img_h" id="menu"></div></a></li>
+                    <li><a class="menu_n menuOff" href="#">About</a></li>
+                    <li><a class="menu_n menuOff" href="#">Careers</a></li>
+                    <li><a class="menu_n menuOff" href="#">Events</a></li>
+                    <li><a class="menu_n menuOff" href="#">Products</a></li>
+                    <li><a class="menu_n menuOff" href="#">Support</a></li>
                 </ul>
             </div>
             <div class="content">
@@ -54,7 +55,7 @@
         <div class="third">
             <div class="header_third">
                 <label>OUR CREATIONS</label>
-                <input type="submit" value="SEE ALL"/>
+                <input id="seeallone" type="submit" value="SEE ALL"/>
             </div>
             <div class="img_third">
                 <div class="img_catalogue img_1">
@@ -93,7 +94,7 @@
                 </div>
             </div>
             <div class="buttom_third">
-                <input type="submit" value="SEE ALL"/>
+                <input id="seeallone" type="submit" value="SEE ALL"/>
             </div>
         </div>
     </article>
@@ -122,12 +123,34 @@
             </div>
     </footer>
     <script>
-        const menu=document.querySelector('#menu');
-        menu.addEventListener('click',(e)=>{
-            e.preventDefault();
-            console.log('Hola mundo')
-        })
-    </script>
+        
+        function buttonclick()    
+        {    
+            var menuList = document.getElementsByClassName("menu_n");
+            var menudisplay = document.getElementById("menu_display");
 
+            if (menuList.className == "menuOff")    
+            {    
+                menuList.className = "menuOn";
+            
+
+                for (i = 0; i < menuList.length; i++) {
+                    menuList[i].style.display = "block";
+                    menuList[i].style.color = "white";
+                    menuList[i].style.background = "black";
+                    menuList[i].style.textDecoration = "none";
+                    menuList[i].style.padding = "2vh 3vh 2vh 3vh";
+                }
+            } else    
+            {    
+                menuList.className = "menuOff";   
+                
+                for (i = 0; i < menuList.length; i++) {
+                    menuList[i].style.display = "none";
+                }
+            }    
+        }  
+
+    </script>
 </body>
 </html>

@@ -106,11 +106,19 @@ body{
         justify-content: center;
         flex-direction: column;
     }
+
+    .header_third input:hover{
+        color: white;
+        background: black;
+    }
+
     .header_third label{
         text-align: center;
         font-size: 25px;
     }
     .header_third input{
+        cursor: pointer;
+        transition: background-color .3s;
         display: none;
     }
     .img_third{
@@ -166,12 +174,21 @@ body{
         justify-content: center;
         margin-bottom: 5vh;
     }
+
     .buttom_third input{
         width: 33vw;
         border-radius: 0;
         border: 1px solid var(--Black);
         padding: 2.5vh;
+        cursor: pointer;
+        transition: background-color .3s;
     }
+
+    .buttom_third input:hover{
+        color: white;
+        background: black;
+    }
+
     .footer_exercise{
         background-color:var(--Black);
         display: flex;
@@ -217,6 +234,16 @@ body{
     .gray{
         color: var(--Dark_Gray);
     }
+
+    .menuOff     
+    {    
+        display: none;    
+    }    
+    
+    .menuOn    
+    {    
+        display: block;    
+    } 
 }
 
 @media (min-width: 768px){
@@ -432,6 +459,7 @@ body{
         margin-top: -5vh;
     }
 }
+
 @media (min-width: 1400px){
     header{
         margin: 0;
