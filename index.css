@@ -137,6 +137,9 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    .img_catalogue:hover{
+        opacity: 0.7;
+    }
     .img_1{
         background-image: url("./images/mobile/image-deep-earth.jpg");
     }
@@ -242,7 +245,7 @@ body{
     
     .menuOn    
     {    
-        display: block;    
+        display: block;   
     } 
 }
 
@@ -378,6 +381,10 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .img_catalogue:hover{
+        opacity: 0.7;
+    }
+
     .img_1{
         background-image: url("./images/mobile/image-deep-earth.jpg");
     }
@@ -601,6 +608,9 @@ body{
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+    }
+    .img_catalogue:hover{
+        opacity: 0.7;
     }
     .img_1{
         background-image: url("./images/desktop/image-deep-earth.jpg");
