@@ -471,6 +471,7 @@ body{
     header{
         margin: 0;
     }
+
     .main{
         background-image: url("./images/desktop/image-hero.jpg");
         background-repeat: no-repeat; 
@@ -505,10 +506,14 @@ body{
         display: none;
     }
     .menu_n{
+        margin-top: -7vh;
         display: inline;
     }
     .menu_n:hover{
         text-decoration: underline;
+    }
+    .menu_display1{
+        display: none!important;
     }
     .content{
         display: flex;
