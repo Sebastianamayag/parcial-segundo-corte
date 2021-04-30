@@ -36,15 +36,40 @@
         <div class="main">
 
             <div class="header">
-
-                <ul>
-                    <li><a href="#">
-                            <div class="menu_h img_h"></div>
+                <p>loopstudios</p>
+                
+                
+                <div>
+                <ul class="menu_display1">
+                    <li><a class="menu_h_d" href="#" id="btnMenu" onclick="buttonclick();">
+                            <div class="menu_h img_h" id="menu"></div>
                         </a></li>
                 </ul>
+                <ul id="menu_display">
+                    <li><a class="menu_n menuOff" href="#">About</a></li>
+                    <li><a class="menu_n menuOff" href="#">Careers</a></li>
+                    <li><a class="menu_n menuOff" href="#">Events</a></li>
+                    <li><a class="menu_n menuOff" href="#">Products</a></li>
+                    <li><a class="menu_n menuOff" href="#">Support</a></li>
+                </ul>
+                </div>
+
+
+                
             </div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
             <div class="content">
-                <p>INMERSIVE EXPERIENCE THAT DELIVER</p>
+                <p>INMERSIVE</p>
+                <p>EXPERIENCES</p>
+                <div class="line">
+                    <p>THAT</p>
+                    <p>DELIVER</p>
+                </div>
             </div>
         </div>
     </header>
@@ -53,17 +78,17 @@
         <div class="img_second"></div>
 
         <div class="second">
-
+            <div class="img_second"></div>
             <div class="texto_s">
-                <label class="texto_secundario">THE LEADER IN <Br /> INTERACTIVE VR</label>
-
-                <label class="texto_secundario_second">
-                    Founded in 2011,Loopstudios has been producing world-class virtual reality
-                    projects for some of the best companies
-                    around the globe. Our award-winning
-                    creations have transformed businesses
-                    through digital experiences that bind to
-                    their brand.</label>
+                <label class="texto_secundario">THE LEADER IN</label>
+                <label class="texto_secundario">INTERACTIVE VR</label><br/>
+                <label class="texto_secundario_second">Founded in 2011,Loopstudios has been</label>
+                <label class="texto_secundario_second">producing world-class virtual reality</label>
+                <label class="texto_secundario_second">projects for some of the best companies</label>
+                <label class="texto_secundario_second">around the globe. Our award-winning</label>
+                <label class="texto_secundario_second">creations have transformed businesses</label>
+                <label class="texto_secundario_second">through digital experiences that bind to</label>
+                <label class="texto_secundario_second">their brand.</label>
             </div>
 
         </div>
@@ -71,10 +96,7 @@
         <div class="third">
             <div class="header_third">
                 <label>OUR CREATIONS</label>
-
-                <div class="buttom_third_des">
-                    <input type="submit" value="SEE ALL" />
-                </div>
+                <input id="seeallone" type="submit" value="SEE ALL"/>
             </div>
             <div class="img_third">
                 <div class="img_catalogue img_1">
@@ -89,8 +111,11 @@
                 <div class="img_catalogue img_4">
                     <label class="text_img">THE <br /> GRID</label>
                 </div>
+            </div>
+            <div class="img_third">
                 <div class="img_catalogue img_5">
-                    <label class="text_img">FROM Ulabel<br />ABOVE VR</label>
+                    <label class="text_img">FROM UP</label>
+                    <label class="text_img">ABOVE VR</label>
                 </div>
                 <div class="img_catalogue img_6">
                     <label class="text_img">POCKET<br />BOREALIS</label>
@@ -103,12 +128,12 @@
                 </div>
             </div>
             <div class="buttom_third">
-                <input type="submit" value="SEE ALL" />
+                <input id="seeallone" type="submit" value="SEE ALL"/>
             </div>
         </div>
     </article>
     <footer class="footer_exercise">
-        <div class="footerColumOne">
+        <div class="footer_1">
             <label class="white">loopstudios</label>
             <div class="ft_ex_container_1">
                 <a href="#">About</a>
@@ -119,18 +144,51 @@
             </div>
         </div>
 
-        <div class="footerColumTwo">
-            <div>
-                <ul class="ft_ex_container_2">
-                    <li><a href="#"><img src="./images/icon-facebook.svg" alt="wts"></a></li>
-                    <li><a href="#"><img src="./images/icon-twitter.svg" alt="wts"></a></li>
-                    <li><a href="#"><img src="./images/icon-pinterest.svg" alt="wts"></a></li>
-                    <li><a href="#"><img src="./images/icon-instagram.svg" alt="wts"></a></li>
-                </ul>
+            <div class="footer_2">
+                <div>
+                    <ul class="ft_ex_container_2">
+                        <li><a href="#"><img src="./images/icon-facebook.svg" alt="wts"></a></li>
+                        <li><a href="#"><img src="./images/icon-twitter.svg" alt="wts"></a></li>
+                        <li><a href="#"><img src="./images/icon-pinterest.svg" alt="wts"></a></li>
+                        <li><a href="#"><img src="./images/icon-instagram.svg" alt="wts"></a></li>
+                    </ul>
+                </div>
+                <label class="gray">&copy; 2021 Loopstudios.All rights reserverd</label>
             </div>
-            <label class="gray">&copy; 2021 Loopstudios.All rights reserverd</label>
     </footer>
-    </div>
+    <script>
+        
+        function buttonclick()    
+        {    
+            var menuList = document.getElementsByClassName("menu_n");
+            var menudisplay = document.getElementById("menu_display");
+            var menuh=document.getElementsByClassName("menu_h");
+            if (menuList.className == "menuOff")    
+            {    
+                menuList.className = "menuOn";
+            
+
+                for (i = 0; i < menuList.length; i++) {
+                    menuList[i].style.display = "block";
+                    menuList[i].style.color = "white";
+                    menuList[i].style.background = "black";
+                    menuList[i].style.textDecoration = "none";
+                    menuList[i].style.padding = "4vh 5vh 4vh 5vh";
+                    menuList[i].style.width="20vw"
+                }
+                menuh.className = "img_x";
+
+            } else    
+            {    
+                menuList.className = "menuOff";  
+                menuh.className = "img_h"; 
+                for (i = 0; i < menuList.length; i++) {
+                    menuList[i].style.display = "none";
+                }
+            }    
+        }  
+
+    </script>
 </body>
 
 </html>
