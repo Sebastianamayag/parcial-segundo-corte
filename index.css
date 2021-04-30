@@ -507,6 +507,9 @@ body{
     .menu_n{
         display: inline;
     }
+    .menu_n:hover{
+        text-decoration: underline;
+    }
     .content{
         display: flex;
         flex-direction: column;
